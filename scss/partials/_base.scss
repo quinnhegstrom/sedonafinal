@@ -1,0 +1,128 @@
+html{
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+width: 100%;
+font-family: $content-font;
+background-color: white;
+}
+body{
+    font-family: $content-font;
+    height: 100%;
+    color: $primary_content_color;
+    width: 100%;
+    background-color: #839CA5;
+}
+h1{
+    padding: 70px 0;
+    text-align: center;
+    animation-duration: 2s;
+    font-family:$content-font;
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+    animation-duration: 3.5s;
+    animation-name: bounceInDown;
+    color:black;
+}
+.header{
+    background-image: url("../img/header.jpeg");
+    height: 900px;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    margin: auto;
+    padding: 0px;
+    margin-top: -100px;
+}
+
+.part{
+    padding: 20px;
+    width: inherit;
+    margin-left: auto;
+    margin-right: auto;
+}
+#one{
+background-image: url("../img/sectionbackground.jpeg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    margin: 0 auto;
+}
+p{
+    margin: auto;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    color:white;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+.navbar navbar-light {
+    border-radius: 25px;
+    opacity: 0.5;
+}
+.carousel-inner{
+    height:500px;
+}
+
+li a:hover {
+    background-color: black;
+    -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  text-decoration: none;
+  border-radius: 25px;
+  color: white;
+
+}
+#secondtitle{
+    color:white;
+}
+.slideshow{
+    width:200px;
+    height: 200px;
+}
+.row{
+    padding:20px;
+}
+.jumbotron{
+    background-color:rgba(255, 255, 255, 0.6);
+    height: 830px;
+}
+.display-4{
+    font-size: 150px;
+    animation-name: bounceInDown;
+    font-family: $primary-font;
+}
+.page-footer{
+    background-color: #d2d2d2;
+}
+@keyframes bounceInDown{
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
